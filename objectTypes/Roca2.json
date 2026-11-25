@@ -1,0 +1,73 @@
+{
+	"name": "Roca2",
+	"plugin-id": "Sprite",
+	"sid": 532398414116339,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Bullet",
+			"name": "Bala",
+			"sid": 998316553764355
+		},
+		{
+			"behaviorId": "destroy",
+			"name": "DestruirFuera",
+			"sid": 963710087393262
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 600,
+						"height": 617,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 9591542,
+						"collisionPoly": {
+							"points": [
+								0.71,
+								0.8184764991896272,
+								0.3931311706629055,
+								0.9222042139384117,
+								0.08666666666666656,
+								0.8962722852512156,
+								0.34333333333333327,
+								0.5721231766612641,
+								0.25746591443347433,
+								0.10598121711329678,
+								0.6953455571227081,
+								0.012328767123287676,
+								0.8466666666666668,
+								0.11912257720743347,
+								0.5266666666666664,
+								0.6113496591993961,
+								0.6799999999999997,
+								0.7082658022690437
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 118528362172373,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

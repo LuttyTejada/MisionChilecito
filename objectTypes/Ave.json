@@ -1,0 +1,89 @@
+{
+	"name": "Ave",
+	"plugin-id": "Sprite",
+	"sid": 936418791732083,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Bullet",
+			"name": "Bala",
+			"sid": 823351380029090
+		},
+		{
+			"behaviorId": "destroy",
+			"name": "DestruirFuera",
+			"sid": 328220321384114
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 179,
+						"height": 103,
+						"originX": 0.547486033519553,
+						"originY": 0.41747572815533984,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 6877956,
+						"collisionPoly": {
+							"points": [
+								0.13407821229050276,
+								0.6737864077669905,
+								0.11955307262569821,
+								0.20776699029126208,
+								0.7541899441340769,
+								0.2116504854368932,
+								0.7564245810055858,
+								0.7087378640776693
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 187,
+						"height": 96,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 8139959,
+						"collisionPoly": {
+							"points": [
+								0.7743315508021388,
+								0.9062500000000001,
+								0.1529411764705882,
+								0.89375,
+								0.14866310160427806,
+								0.26250000000000007,
+								0.782887700534759,
+								0.27499999999999997
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 672219458559986,
+				"name": "Animation 1",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

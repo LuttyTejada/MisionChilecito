@@ -38,10 +38,10 @@
 				{
 					"id": "compare-x",
 					"objectClass": "Fondo",
-					"sid": 616570559818652,
+					"sid": 923794850131667,
 					"parameters": {
 						"comparison": 3,
-						"x-co-ordinate": "-Fondo.Width"
+						"x-co-ordinate": "-Fondo.Width/2"
 					}
 				}
 			],
@@ -49,13 +49,242 @@
 				{
 					"id": "set-x",
 					"objectClass": "Fondo",
-					"sid": 691766237075044,
+					"sid": 528847917427009,
 					"parameters": {
-						"x": "Self.X + Self.Width"
+						"x": "0"
 					}
 				}
 			],
 			"sid": 750496148945895
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Obstaculos",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Helicoptero",
+							"sid": 831194214609444,
+							"parameters": {
+								"object": "Ave"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "Ave",
+							"sid": 853619570602152
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Helicoptero",
+							"sid": 741591776497838,
+							"parameters": {
+								"animation": "\"Destruir\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 933912483099925,
+							"parameters": {
+								"seconds": "0.5",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "restart-layout",
+							"objectClass": "System",
+							"sid": 413890130169061
+						}
+					],
+					"sid": 553509567896522
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Helicoptero",
+							"sid": 271023076739164,
+							"parameters": {
+								"object": "Roca1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "Roca1",
+							"sid": 805505537598757
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Helicoptero",
+							"sid": 993840644017126,
+							"parameters": {
+								"animation": "\"Destruir\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 827363406935741,
+							"parameters": {
+								"seconds": "0.5",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "restart-layout",
+							"objectClass": "System",
+							"sid": 482617696536884
+						}
+					],
+					"sid": 865370399071255
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Helicoptero",
+							"sid": 548208616436589,
+							"parameters": {
+								"object": "Roca2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "Roca2",
+							"sid": 608417905833528
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Helicoptero",
+							"sid": 560706446179023,
+							"parameters": {
+								"animation": "\"Destruir\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 614639587103656,
+							"parameters": {
+								"seconds": "0.5",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "restart-layout",
+							"objectClass": "System",
+							"sid": 621938008144755
+						}
+					],
+					"sid": 329974247888114
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 870412781626459,
+							"parameters": {
+								"interval-seconds": "random(2,4)"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 364089130308391,
+							"parameters": {
+								"object-to-create": "Ave",
+								"layer": "1",
+								"x": "1300",
+								"y": "random(80, 260)",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						}
+					],
+					"sid": 553809387925136
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 685927605459743,
+							"parameters": {
+								"interval-seconds": "random(3.2,6)"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 405023576448858,
+							"parameters": {
+								"object-to-create": "Roca1",
+								"layer": "1",
+								"x": "1300",
+								"y": "random(650, 720)",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						}
+					],
+					"sid": 334902226673920
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 106130044264853,
+							"parameters": {
+								"interval-seconds": "random(0.5,8)"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 267979045156828,
+							"parameters": {
+								"object-to-create": "Roca2",
+								"layer": "1",
+								"x": "1300",
+								"y": "random(550, 720)",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						}
+					],
+					"sid": 121526021019110
+				}
+			],
+			"sid": 208023840563344
 		}
 	],
 	"sid": 355586319181800
