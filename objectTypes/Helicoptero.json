@@ -10,6 +10,11 @@
 			"behaviorId": "EightDir",
 			"name": "8Direcciones",
 			"sid": 510413229035819
+		},
+		{
+			"behaviorId": "bound",
+			"name": "RestringidoA",
+			"sid": 508408289065432
 		}
 	],
 	"effectTypes": [],
@@ -18,15 +23,37 @@
 			{
 				"frames": [
 					{
-						"width": 250,
-						"height": 250,
-						"originX": 0.5,
-						"originY": 0.5,
+						"width": 620,
+						"height": 463,
+						"originX": -0.1487983524703231,
+						"originY": 1.3689647206362827,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
 						"imageSpriteId": 2482208,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								0.8756814516912436,
+								0.021887799815921014,
+								1,
+								0.23026376100532073,
+								1,
+								0.590185875787011,
+								1,
+								1,
+								0.5719570243438052,
+								1,
+								0,
+								1,
+								0,
+								1,
+								0,
+								0.5417752989450293
+							]
+						},
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""

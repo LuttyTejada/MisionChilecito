@@ -26,12 +26,19 @@
 			"name": "8 Direcciones",
 			"author": "Scirra",
 			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "bound",
+			"name": "Restringido a",
+			"author": "Scirra",
+			"bundled": false
 		}
 	],
 	"uniqueId": "k9d98vn3jj7",
 	"objectTypes": {
 		"items": [
-			"FondoEnMosaico",
+			"Fondo",
 			"Helicoptero"
 		],
 		"subfolders": []

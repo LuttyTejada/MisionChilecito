@@ -1,5 +1,5 @@
 {
-	"name": "FondoEnMosaico",
+	"name": "Fondo",
 	"plugin-id": "TiledBg",
 	"sid": 860884223950333,
 	"isGlobal": false,
@@ -8,8 +8,8 @@
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"image": {
-		"width": 247,
-		"height": 11,
+		"width": 2554,
+		"height": 821,
 		"originX": 0.5,
 		"originY": 0.5,
 		"originalSource": "",

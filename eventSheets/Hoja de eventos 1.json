@@ -1,5 +1,62 @@
 {
 	"name": "Hoja de eventos 1",
-	"events": [],
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "VelocidadScroll",
+			"type": "number",
+			"initialValue": "250",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 475079680210613
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 799342818602261
+				}
+			],
+			"actions": [
+				{
+					"id": "set-x",
+					"objectClass": "Fondo",
+					"sid": 668237590707891,
+					"parameters": {
+						"x": "Self.X - VelocidadScroll * dt"
+					}
+				}
+			],
+			"sid": 957777648495989
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-x",
+					"objectClass": "Fondo",
+					"sid": 616570559818652,
+					"parameters": {
+						"comparison": 3,
+						"x-co-ordinate": "-Fondo.Width"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-x",
+					"objectClass": "Fondo",
+					"sid": 691766237075044,
+					"parameters": {
+						"x": "Self.X + Self.Width"
+					}
+				}
+			],
+			"sid": 750496148945895
+		}
+	],
 	"sid": 355586319181800
 }
