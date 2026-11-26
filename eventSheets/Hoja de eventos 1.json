@@ -282,6 +282,78 @@
 						}
 					],
 					"sid": 121526021019110
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Helicoptero",
+							"sid": 710711744495727,
+							"parameters": {
+								"object": "Nube"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 245882401206789,
+							"parameters": {
+								"variable": "VelocidadScroll",
+								"value": "100"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 762648004756788,
+							"parameters": {
+								"seconds": "2",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 716746777713191,
+							"parameters": {
+								"variable": "VelocidadScroll",
+								"value": "250"
+							}
+						}
+					],
+					"sid": 482433678172599
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 213410722039078,
+							"parameters": {
+								"interval-seconds": "random(0.5,8)"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 327757187162650,
+							"parameters": {
+								"object-to-create": "Nube",
+								"layer": "1",
+								"x": "1300",
+								"y": "random(80, 650)",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						}
+					],
+					"sid": 438519739638674
 				}
 			],
 			"sid": 208023840563344
