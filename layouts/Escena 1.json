@@ -32,12 +32,12 @@
 					"behaviors": {},
 					"materialSurfaceType": "smooth",
 					"showing": true,
-					"locked": true,
+					"locked": false,
 					"world": {
-						"x": -6,
-						"y": -44,
-						"width": 5084,
-						"height": 808,
+						"x": 6,
+						"y": -333,
+						"width": 10489,
+						"height": 1433,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -54,7 +54,7 @@
 					"type": "Helicoptero",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "Animación 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -87,10 +87,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 375,
-						"y": 183,
-						"width": 270.9514613348356,
-						"height": 202.3395590290788,
+						"x": 299.6299546071633,
+						"y": 215.15996550999537,
+						"width": 426.1249278061889,
+						"height": 323.7746704210288,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -107,7 +107,7 @@
 					"type": "Ave",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "Animación 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -139,11 +139,11 @@
 					"locked": false,
 					"world": {
 						"x": 1336,
-						"y": -87,
-						"width": 179,
-						"height": 103,
-						"originX": 0.547486033519553,
-						"originY": 0.41747572815533984,
+						"y": -161,
+						"width": 181,
+						"height": 123,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
@@ -189,10 +189,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 1096,
-						"y": -162,
-						"width": 173.56733291946802,
-						"height": 241.71408661539834,
+						"x": 1103,
+						"y": -216,
+						"width": 295.4547776650845,
+						"height": 328.8951377440164,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -240,10 +240,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 1620,
-						"y": -232,
-						"width": 360.97655888149166,
-						"height": 371.2042280498006,
+						"x": 1678.2818900984503,
+						"y": -338.87260351414767,
+						"width": 501.60046787382527,
+						"height": 560.4392324338047,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -342,8 +342,8 @@
 	"sid": 655678904880641,
 	"nonworld-instances": [],
 	"effectTypes": [],
-	"width": 1280,
-	"height": 720,
+	"width": 1920,
+	"height": 1080,
 	"unboundedScrolling": false,
 	"sampling": "auto",
 	"ambientLight": 0.03,
