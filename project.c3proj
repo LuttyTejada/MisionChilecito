@@ -57,7 +57,8 @@
 			"Ave",
 			"Roca1",
 			"Roca2",
-			"Nube"
+			"Nube",
+			"Fondo2"
 		],
 		"subfolders": []
 	},
@@ -70,7 +71,10 @@
 	},
 	"layouts": {
 		"items": [
-			"Escena 1"
+			"Nivel 1",
+			"Nivel 2",
+			"Nivel 3",
+			"Nivel 4"
 		],
 		"subfolders": []
 	},

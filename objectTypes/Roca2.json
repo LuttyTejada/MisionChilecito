@@ -54,7 +54,46 @@
 					}
 				],
 				"sid": 118528362172373,
-				"name": "Animation 1",
+				"name": "roca1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 682,
+						"height": 762,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 9364757,
+						"collisionPoly": {
+							"points": [
+								0.1906158357771261,
+								0,
+								0.8812316715542522,
+								0.0026246719160104987,
+								0.7228739002932552,
+								0.4606299212598424,
+								0.5703812316715543,
+								0.8057742782152231,
+								0.3343108504398828,
+								0.8700787401574803
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 950500598266307,
+				"name": "roca2",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,

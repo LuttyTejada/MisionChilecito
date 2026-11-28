@@ -1,5 +1,5 @@
 {
-	"name": "Escena 1",
+	"name": "Nivel 2",
 	"layers": [
 		{
 			"name": "Nivel1",
@@ -7,7 +7,7 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "Fondo",
+					"type": "Fondo2",
 					"properties": {
 						"initially-visible": true,
 						"origin": "top-left",
@@ -25,8 +25,8 @@
 						"blend-margin-x": 0.1,
 						"blend-margin-y": 0.1
 					},
-					"uid": 2,
-					"sid": 313265870097823,
+					"uid": 20,
+					"sid": 292390594754573,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
@@ -34,10 +34,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 6,
-						"y": -333,
-						"width": 10489,
-						"height": 1433,
+						"x": -3,
+						"y": -349,
+						"width": 5250,
+						"height": 1440,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -59,8 +59,8 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 5,
-					"sid": 667050795459864,
+					"uid": 21,
+					"sid": 244175869974999,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
@@ -87,10 +87,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 299.6299546071633,
-						"y": 215.15996550999537,
-						"width": 426.1249278061889,
-						"height": 323.7746704210288,
+						"x": 294.61515258836937,
+						"y": 218.76928234551173,
+						"width": 416.09532376860096,
+						"height": 316.5560367499961,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -112,8 +112,8 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 3,
-					"sid": 763052584188755,
+					"uid": 22,
+					"sid": 611083872063033,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
@@ -163,8 +163,8 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 4,
-					"sid": 818309914641667,
+					"uid": 23,
+					"sid": 329146072247761,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
@@ -189,10 +189,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 1103,
-						"y": -216,
-						"width": 295.4547776650845,
-						"height": 328.8951377440164,
+						"x": 2042,
+						"y": -334,
+						"width": 453.75565560250595,
+						"height": 505.11293143034845,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -209,13 +209,13 @@
 					"type": "Roca2",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "roca1",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 6,
-					"sid": 237357508795779,
+					"uid": 24,
+					"sid": 656191297508544,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
@@ -240,10 +240,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 1678.2818900984503,
-						"y": -338.87260351414767,
-						"width": 501.60046787382527,
-						"height": 560.4392324338047,
+						"x": 1652.522103974467,
+						"y": -310.47313249172424,
+						"width": 450.45941991686186,
+						"height": 503.29923456986614,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -265,8 +265,8 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 7,
-					"sid": 570829365067138,
+					"uid": 25,
+					"sid": 967403160072011,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
@@ -291,8 +291,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 797,
-						"y": -177,
+						"x": 992,
+						"y": -197,
 						"width": 424.5661802845834,
 						"height": 264.262687915451,
 						"originX": 0.5,
@@ -308,7 +308,7 @@
 					}
 				}
 			],
-			"sid": 563955376292627,
+			"sid": 243740444023372,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"isInitiallyInteractive": true,
@@ -339,7 +339,7 @@
 			"global": false
 		}
 	],
-	"sid": 655678904880641,
+	"sid": 441619362207147,
 	"nonworld-instances": [],
 	"effectTypes": [],
 	"width": 1920,

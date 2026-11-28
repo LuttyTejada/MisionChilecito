@@ -12,6 +12,36 @@
 			"sid": 475079680210613
 		},
 		{
+			"eventType": "variable",
+			"name": "NivelActual",
+			"type": "number",
+			"initialValue": "1",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 692948185534127
+		},
+		{
+			"eventType": "variable",
+			"name": "TiempoNivel",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 401287321198340
+		},
+		{
+			"eventType": "variable",
+			"name": "DuracionNivel",
+			"type": "number",
+			"initialValue": "30",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 653709151927083
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -56,6 +86,28 @@
 				}
 			],
 			"sid": 750496148945895
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 653503550347066
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 606238739402475,
+					"parameters": {
+						"variable": "NivelActual",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 982602866172572
 		},
 		{
 			"eventType": "group",
@@ -212,12 +264,12 @@
 						{
 							"id": "create-object",
 							"objectClass": "System",
-							"sid": 331757823423491,
+							"sid": 649838276914439,
 							"parameters": {
 								"object-to-create": "Ave",
 								"layer": "1",
 								"x": "2000",
-								"y": "random(80, 360)",
+								"y": "random(150, 400)",
 								"create-hierarchy": false,
 								"template-name": "\"\""
 							}
@@ -231,9 +283,9 @@
 						{
 							"id": "every-x-seconds",
 							"objectClass": "System",
-							"sid": 685927605459743,
+							"sid": 745017145944074,
 							"parameters": {
-								"interval-seconds": "random(3.2,6)"
+								"interval-seconds": "random(6,9)"
 							}
 						}
 					],
@@ -260,9 +312,9 @@
 						{
 							"id": "every-x-seconds",
 							"objectClass": "System",
-							"sid": 106130044264853,
+							"sid": 538621149302959,
 							"parameters": {
-								"interval-seconds": "random(0.5,8)"
+								"interval-seconds": "random(0.5,7.5)"
 							}
 						}
 					],
@@ -285,6 +337,95 @@
 				}
 			],
 			"sid": 208023840563344
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Gestión de Niveles",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 789245817235425
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 575175943875665,
+							"parameters": {
+								"variable": "TiempoNivel",
+								"value": "0"
+							}
+						}
+					],
+					"sid": 380561770479391
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 197873422463811
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 404542557515642,
+							"parameters": {
+								"variable": "TiempoNivel",
+								"value": "dt"
+							}
+						}
+					],
+					"sid": 999338091282168
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 310986948529893,
+							"parameters": {
+								"variable": "TiempoNivel",
+								"comparison": 5,
+								"value": "DuracionNivel"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 579837189415830,
+							"parameters": {
+								"variable": "NivelActual",
+								"value": "1"
+							}
+						},
+						{
+							"id": "go-to-layout-by-name",
+							"objectClass": "System",
+							"sid": 989633397798553,
+							"parameters": {
+								"layout": "\"Nivel \" & NivelActual"
+							}
+						}
+					],
+					"sid": 516242691180906
+				}
+			],
+			"sid": 955079152811634
 		}
 	],
 	"sid": 355586319181800
